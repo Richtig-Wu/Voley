@@ -9,7 +9,7 @@
     <!-- contain start -->
     <main>
         <Gao/>
-        <!-- <Temai/> -->
+        <Copy/>
         <!-- <Pro/>  -->
     </main>
     <!-- foot start -->
@@ -25,10 +25,10 @@ import VueAwesomeSwiper from "vue-awesome-swiper";
 import Top from "@/components/Top";
 // 轮播组件
 import Swiper from "@/components/Swiper";
-// 广告组件
-import Gao from "@/components/Guanggao";
-//特卖组件
-import Temai from "@/components/Temai";
+// 内容组件
+import Gao from "@/components/Content";
+//版权组件
+import Copy from "@/components/Copyright";
 // 产品组件
 import Pro from "@/components/Product";
 // 底部导航
@@ -49,25 +49,29 @@ export default {
   components: {
     Top: Top,
     Gao: Gao,
-    Temai: Temai,
+    Copy: Copy,
     Pro: Pro,
     Fot: Fot,
     Swiper: Swiper
   }
 };
 </script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+</style>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-* {
-  font-size: 16px;
-}
+
 h1,
 h2 {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 a {
   color: #42b983;

@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <img src="../assets/bigLogo.png" alt="">
     <nav class="navbar navbar-default top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -111,8 +111,11 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+div img{
+  width: 100%;
+}
 .top{
-  background: #009ed9;
+  background:#009ed9;
   color: #fff;
 }
 .mynav{
@@ -129,14 +132,18 @@ export default {
 }
 /* 导航按钮  */
 .btn {
-  width: 3.5em;
+  width: 3.2em;
   height: 2.5em;
   outline:none;
 }
-.navbar-toggle:focus{
-  background: #fff;
+.navbar-default .navbar-toggle{
+  background: #f8f2f2;
 }
-.foots{
+
+.navbar-toggle:focus{
+  background: #f8f2f2;
+}
+div .foots{
   font-size: 1em;
 }
 </style>
